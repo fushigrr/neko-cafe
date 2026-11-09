@@ -1,0 +1,533 @@
+.admin-page {
+    min-height: 100vh;
+    background: #fbf5ec;
+    color: #39271e;
+    font-family: 'DM Sans', Arial, sans-serif;
+  }
+  
+  .admin-header {
+    min-height: 85px;
+    padding: 12px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fffdf9;
+    border-bottom: 1px solid #e9dac9;
+  }
+  
+  .admin-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .admin-brand img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+  }
+  
+  .admin-brand span {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .admin-brand strong {
+    color: #422516;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 23px;
+  }
+  
+  .admin-brand small {
+    color: #a76532;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+  
+  .admin-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .admin-site-link {
+    color: #713b1c;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .admin-logout {
+    padding: 11px 20px;
+    background: #713b1c;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .admin-logout:hover {
+    background: #a76532;
+  }
+  
+  .admin-content {
+    width: 84%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .admin-welcome {
+    min-height: 310px;
+    margin-top: 45px;
+    padding: 55px 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:
+      radial-gradient(circle at 85% 50%, #ead8c1, transparent 35%),
+      #eee1d0;
+    border-radius: 20px;
+  }
+  
+  .admin-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #a76532;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+  }
+  
+  .admin-eyebrow i {
+    width: 7px;
+    height: 7px;
+    background: #a76532;
+    border-radius: 50%;
+  }
+  
+  .admin-welcome h1 {
+    margin-top: 20px;
+    color: #422516;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(38px, 5vw, 56px);
+    line-height: 1.12;
+  }
+  
+  .admin-welcome h1 em,
+  .admin-section-heading h2 em {
+    color: #a76532;
+    font-weight: normal;
+  }
+  
+  .admin-welcome p {
+    max-width: 470px;
+    margin-top: 18px;
+    color: #806d5e;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  
+  .admin-welcome-decoration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #713b1c;
+  }
+  
+  .admin-welcome-decoration span {
+    font-size: 105px;
+  }
+  
+  .admin-welcome-decoration small {
+    font-family: Georgia, serif;
+    font-style: italic;
+  }
+  
+  .admin-stats {
+    margin: 30px 0 75px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .admin-stat {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    background: #fffdf9;
+    border: 1px solid #e9dac9;
+    border-radius: 14px;
+  }
+  
+  .admin-stat > span {
+    color: #806d5e;
+    font-size: 12px;
+  }
+  
+  .admin-stat strong {
+    color: #713b1c;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 35px;
+  }
+  
+  .admin-stat small {
+    color: #a76532;
+    font-size: 10px;
+  }
+  
+  .admin-products,
+  .admin-form-section {
+    margin-bottom: 75px;
+  }
+  
+  .admin-section-heading {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .admin-section-heading h2 {
+    margin-top: 12px;
+    color: #422516;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 38px;
+  }
+  
+  .admin-section-heading p {
+    margin-top: 10px;
+    color: #806d5e;
+    font-size: 13px;
+  }
+  
+  .admin-add-button {
+    padding: 13px 20px;
+    background: #713b1c;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .admin-add-button:hover {
+    background: #a76532;
+  }
+  
+  .admin-product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .admin-product-row {
+    min-height: 90px;
+    padding: 15px 20px;
+    display: grid;
+    grid-template-columns: 65px 1.5fr 1fr 110px 180px;
+    align-items: center;
+    gap: 20px;
+    background: #fffdf9;
+    border: 1px solid #e9dac9;
+    border-radius: 12px;
+  }
+  
+  .admin-product-image {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #eee1d0;
+    border-radius: 10px;
+    color: #713b1c;
+    font-size: 28px;
+  }
+  
+  .admin-product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .admin-product-description {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .admin-product-description strong {
+    color: #422516;
+    font-size: 13px;
+  }
+  
+  .admin-product-description span {
+    color: #a76532;
+    font-size: 11px;
+  }
+  
+  .admin-product-price {
+    color: #713b1c;
+    font-size: 13px;
+  }
+  
+  .admin-status {
+    width: fit-content;
+    padding: 7px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  .admin-status.available {
+    background: #e6efe2;
+    color: #426b3e;
+  }
+  
+  .admin-status.unavailable {
+    background: #f8e5df;
+    color: #9b4939;
+  }
+  
+  .admin-product-actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .admin-product-actions button {
+    padding: 8px 11px;
+    background: #eee1d0;
+    border: none;
+    border-radius: 7px;
+    color: #713b1c;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  .admin-product-actions button:hover {
+    background: #e4c9ad;
+  }
+  
+  .admin-product-actions .admin-delete {
+    background: #f8e5df;
+    color: #9b4939;
+  }
+  
+  .admin-product-actions .admin-delete:hover {
+    background: #f0d0c6;
+  }
+  
+  .admin-product-actions button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .admin-feedback {
+    margin: 15px 0;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+  
+  .admin-error {
+    background: #f8e5df;
+    color: #9b4939;
+  }
+  
+  .admin-success {
+    background: #e6efe2;
+    color: #426b3e;
+  }
+  
+  .admin-form-section {
+    padding: 45px;
+    background: #fffdf9;
+    border: 1px solid #e9dac9;
+    border-radius: 18px;
+  }
+  
+  .admin-form {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .admin-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  
+  .admin-input-group label {
+    color: #422516;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .admin-input-group input,
+  .admin-input-group textarea,
+  .admin-input-group select {
+    width: 100%;
+    padding: 13px 15px;
+    background: #fbf5ec;
+    border: 1px solid #e9dac9;
+    border-radius: 8px;
+    color: #39271e;
+    font-family: inherit;
+    font-size: 13px;
+  }
+  
+  .admin-input-group input:focus,
+  .admin-input-group textarea:focus,
+  .admin-input-group select:focus {
+    border-color: #a76532;
+    outline: none;
+  }
+  
+  .admin-input-group textarea {
+    resize: vertical;
+  }
+  
+  .admin-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .admin-form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  
+  .admin-save-button,
+  .admin-cancel-button {
+    padding: 14px 23px;
+    border: none;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .admin-save-button {
+    background: #713b1c;
+    color: white;
+  }
+  
+  .admin-save-button:hover {
+    background: #a76532;
+  }
+  
+  .admin-cancel-button {
+    background: #eee1d0;
+    color: #713b1c;
+  }
+  
+  .admin-save-button:disabled,
+  .admin-cancel-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .admin-footer {
+    min-height: 110px;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #422516;
+    color: #fbf5ec;
+  }
+  
+  .admin-footer span {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 20px;
+  }
+  
+  .admin-footer p {
+    color: #d7bda7;
+    font-size: 12px;
+  }
+  
+  @media (max-width: 900px) {
+    .admin-content { width: 90%; }
+  
+    .admin-product-row {
+      grid-template-columns: 55px 1fr 1fr;
+    }
+  
+    .admin-status { grid-column: 2; }
+  
+    .admin-product-actions {
+      grid-column: 3;
+      grid-row: 2;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .admin-header { padding: 12px 5%; }
+  
+    .admin-brand img {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .admin-brand strong { font-size: 18px; }
+    .admin-header-actions { gap: 10px; }
+    .admin-site-link { display: none; }
+  
+    .admin-content { width: 90%; }
+  
+    .admin-welcome {
+      min-height: auto;
+      padding: 35px 25px;
+    }
+  
+    .admin-welcome-decoration { display: none; }
+    .admin-welcome h1 { font-size: 39px; }
+  
+    .admin-stats {
+      grid-template-columns: 1fr;
+      margin-bottom: 55px;
+    }
+  
+    .admin-section-heading {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  
+    .admin-section-heading h2 { font-size: 31px; }
+  
+    .admin-product-row {
+      grid-template-columns: 55px 1fr;
+      gap: 12px;
+    }
+  
+    .admin-product-price,
+    .admin-status,
+    .admin-product-actions {
+      grid-column: 2;
+    }
+  
+    .admin-product-actions { grid-row: auto; }
+  
+    .admin-form-section {
+      padding: 25px 18px;
+    }
+  
+    .admin-form-row { grid-template-columns: 1fr; }
+  
+    .admin-footer {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  }
