@@ -221,6 +221,7 @@ Os documentos de produtos armazenam informações como:
 
 - Rafaella Rocha Deganutti
 - Gustavo Grancieri
+- Fabricio Bastos
 
 ## 🎓 Objetivo acadêmico
 
